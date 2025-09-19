@@ -1,0 +1,25 @@
+return {
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000, -- 高优先级，保证主题先加载
+    config = function()
+      -- 配置 Kanagawa 主题
+      require("kanagawa").setup({
+        compile = true, -- 编译加速
+        undercurl = true, -- 下划线风格
+        commentStyle = { italic = true },
+        functionStyle = {},
+        keywordStyle = { italic = true },
+        statementStyle = { bold = true },
+        typeStyle = {},
+        transparent = true, -- 设置是否透明
+        dimInactive = false, -- 非活动窗口变暗
+        globalStatus = true,
+        theme = "wave",
+      })
+
+      -- 设置应用主题
+      vim.cmd([[colorscheme kanagawa]])
+    end,
+  },
+}
