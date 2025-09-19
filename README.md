@@ -13,3 +13,17 @@ git clone git@github.com:00longxiaoyi/nvim_config.git ~/.config/nvim/
 - nvim-cmp
 - LuaSnip
 - nvim-lspconfig
+
+## Directory Structure
+.
+├── init.lua
+├── lazy-lock.json
+├── lazyvim.json
+├── LICENSE
+├── lua (config Directory)
+│   ├── config  
+│   ├── luaSnip (snippet Directory)
+│   └── plugins (plugins Directory)
+├── README.md
+└── stylua.toml
+
